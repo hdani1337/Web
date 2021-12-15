@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Kapcsolat</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dist/css/product.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="index.html">Kezdőlap</a>
+        <a class="py-2 d-none d-md-inline-block" href="galeria.html">Galéria</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Kapcsolat</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Fidesz_2015.svg/2044px-Fidesz_2015.svg.png" alt="Éljen a Fidesz!" width="72" height="72">
+          <h2>Kapcsolat</h2>
+          <p class="lead">Kérjük adja meg az adatait, hogy felvehessük önnel a kapcsolatot!</p>
+        </div>
+    
+        <div class="row g-5">
+          <div class="col-md-12 col-lg-12">
+            <h4 class="mb-3">Személyes adatok</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Vezetéknév</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Keresztnév</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div id="emaildiv" class="col-12">
+                  <br>
+                  <label for="email" class="form-label">Email-címe <span class="text-muted">(Opcionális)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="te@email.hu">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+    
+                <div id="lakcim" class="col-12">
+                  <br>
+                  <label for="address" class="form-label">Lakcím</label>
+                  <input type="text" class="form-control" id="address" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+
+                <div id="iranyitoszam" class="col-md-9">
+                  <br>
+                  <label for="zip" class="form-label">Irányítószám</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+    
+                <div id="orszag" class="col-md-3">
+                  <br>
+                  <label for="country" class="form-label">Ország</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Válasszon...</option>
+                    <option>Hanyatló Nyugat</option>
+                    <option>Magyarország</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>              
+    
+                
+              </div>
+    
+              <hr class="my-4">
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Elfogadom a Fidesz titoktartási szerződését</label>
+              </div>
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Hozzájárulok, hogy román szervkereskedők kioperálják a vesémet</label>
+              </div>
+           
+              <button id="gomb" class="w-100 btn btn-primary btn-lg">Elküldés</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2021 - Fidesz</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">...vagy keressen fel Ön minket!</h1>
+        <p class="lead font-weight-normal">Fidesz Központi Hivatal</p>
+        <p class="lead font-weight-normal">1062 Budapest, Lendvay utca 28.</p>
+        <p class="lead font-weight-normal">telefon: (06-1) 555-2000</p>
+        <p class="lead font-weight-normal">e-mail: kapcsolat@fidesz.hu</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="v/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="dist/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/vendor/holder.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+    
+    <script>
+      $(document).ready(function(){
+        $("#iranyitoszam").hide();
+        $("#orszag").hide();
+        $("#gomb").hide();
+        $("#lakcim").hide();
+        $("#emaildiv").hide();
+
+        $("#address").keyup(function(){
+          if($("#address").val() != ""){
+            $("#iranyitoszam").show();
+            $("#orszag").show();
+            $("#gomb").show();
+          }else{
+            $("#iranyitoszam").hide();
+            $("#orszag").hide();
+            $("#gomb").hide();
+          }
+        });
+
+        $("#lastName").keyup(function(){
+          if($("#lastName").val() != ""){
+            $("#lakcim").show();
+            $("#emaildiv").show();
+          }else{
+            $("#lakcim").hide();
+            $("#emaildiv").hide();
+            $("#iranyitoszam").hide();
+            $("#orszag").hide();
+            $("#gomb").hide();
+          }
+        });
+
+        $("#gomb").click(function(){
+        alert("KLIKK");
+        });
+      });
+    </script>
+  </body>
+</html>
